@@ -23,7 +23,7 @@ class _PlayTestScreenState extends State<PlayTestScreen> with SingleTickerProvid
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Start Test Menu")
+        title: Text(widget.testToPlay.name)
       ),
       body: CountDownTimerPage(testToDisplay: widget.testToPlay),
     );
